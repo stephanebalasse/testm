@@ -13,6 +13,7 @@ namespace App\Repository;
 
 use App\Entity\Post;
 use App\Entity\Tag;
+use App\Entity\Categorie;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Common\Persistence\ManagerRegistry;
 use Doctrine\ORM\Query;

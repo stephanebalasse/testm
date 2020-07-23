@@ -11,27 +11,19 @@
 
 namespace App\Form;
 
-use App\Entity\Post;
 use App\Entity\Categorie;
-
 use App\Form\Type\DateTimePickerType;
 use App\Form\Type\TagsInputType;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\TextareaType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
-use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
-use Symfony\Bridge\Doctrine\Form\Type\EntityType;
-
 
 /**
- * Defines the form used to create and manipulate blog posts.
+ * Defines the form used to create and manipulate blog categories.
  *
- * @author Ryan Weaver <weaverryan@gmail.com>
- * @author Javier Eguiluz <javier.eguiluz@gmail.com>
- * @author Yonel Ceruto <yonelceruto@gmail.com>
  */
-class PostType extends AbstractType
+class CategorieType extends AbstractType
 {
     /**
      * {@inheritdoc}
@@ -48,33 +40,13 @@ class PostType extends AbstractType
         // $builder->add('title', null, ['required' => false, ...]);
 
         $builder
-            ->add('title', null, [
+            ->add('name', null, [
                 'attr' => ['autofocus' => true],
-                'label' => 'label.title',
-            ])
-            ->add('summary', TextareaType::class, [
-                'help' => 'help.post_summary',
-                'label' => 'label.summary',
-            ])
-            ->add('content', null, [
-                'attr' => ['rows' => 20],
-                'help' => 'help.post_content',
-                'label' => 'label.content',
-            ])
-            ->add('publishedAt', DateTimePickerType::class, [
-                'label' => 'label.published_at',
-                'help' => 'help.post_publication',
-            ])
-            ->add('tags', TagsInputType::class, [
-                'label' => 'label.tags',
-                'required' => false,
-            ])
-            ->add('categorie', EntityType::class, [
-                'label' => 'label.categorie',
-                'required' => false,
-                'class' => Categorie::class
+                'label' => 'label.name',
 
             ])
+
+
         ;
     }
 
@@ -84,7 +56,7 @@ class PostType extends AbstractType
     public function configureOptions(OptionsResolver $resolver): void
     {
         $resolver->setDefaults([
-            'data_class' => Post::class,
+            'data_class' => Categorie::class,
         ]);
     }
 }

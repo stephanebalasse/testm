@@ -118,6 +118,11 @@ class AppFixtures extends Fixture
         ];
     }
 
+    /**
+     * Remplir des posts pour les fixtures
+     * @return array
+     * @throws \Exception
+     */
     private function getPostData()
     {
         $posts = [];

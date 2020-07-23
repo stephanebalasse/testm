@@ -80,6 +80,10 @@
                 <source>title.post_list</source>
                 <target>Liste des articles</target>
             </trans-unit>
+            <trans-unit id="title.categorie_list">
+                <source>title.categorie_list</source>
+                <target>Liste des catégories</target>
+            </trans-unit>
             <trans-unit id="title.edit_post">
                 <source>title.edit_post</source>
                 <target>Modifier l'article #{id, number}</target>
@@ -186,6 +190,33 @@
                 <target>Modifier le mot de passe</target>
             </trans-unit>
 
+            <trans-unit id="action.create_categorie">
+                <source>action.create_categorie</source>
+                <target>Ajouter une catégorie</target>
+            </trans-unit>
+            <trans-unit id="label.create_categorie">
+                <source>label.create_categorie</source>
+                <target>Créer une catégorie</target>
+            </trans-unit>
+
+            <trans-unit id="action.back_to_list_categorie">
+                <source>action.back_to_list_categorie</source>
+                <target>Retour à la liste des catégories</target>
+            </trans-unit>
+            <trans-unit id="label.save_and_create_new_categorie">
+                <source>label.save_and_create_new_categorie</source>
+                <target>Enregistrer et créer une nouvelle catégorie</target>
+            </trans-unit>
+
+            <trans-unit id="label.name">
+                <source>label.name</source>
+                <target>Nom</target>
+            </trans-unit>
+            <trans-unit id="label.created_at">
+                <source>label.created_at</source>
+                <target>Crée le</target>
+            </trans-unit>
+
             <trans-unit id="label.title">
                 <source>label.title</source>
                 <target>Titre</target>
@@ -250,6 +281,16 @@
                 <source>label.actions</source>
                 <target>Actions</target>
             </trans-unit>
+            <trans-unit id="label.description">
+                <source>label.description</source>
+                <target>Déscription</target>
+            </trans-unit>
+            <trans-unit id="label.categorie">
+                <source>label.categorie</source>
+                <target>Catégorie</target>
+            </trans-unit>
+
+
             <trans-unit id="title.post_new">
                 <source>title.post_new</source>
                 <target>Ajouter un nouvel article</target>
@@ -257,6 +298,11 @@
             <trans-unit id="action.edit_contents">
                 <source>action.edit_contents</source>
                 <target>Modifier le contenu</target>
+            </trans-unit>
+
+            <trans-unit id="title.categorie_new">
+                <source>title.categorie_new</source>
+                <target>Ajouter une nouvelle catégorie</target>
             </trans-unit>
 
             <trans-unit id="menu.toggle_nav">
@@ -270,6 +316,10 @@
             <trans-unit id="menu.post_list">
                 <source>menu.post_list</source>
                 <target>Liste des articles</target>
+            </trans-unit>
+            <trans-unit id="menu.categorie_list">
+                <source>menu.categorie_list</source>
+                <target>Liste des catégories</target>
             </trans-unit>
             <trans-unit id="menu.back_to_blog">
                 <source>menu.back_to_blog</source>
@@ -339,6 +389,16 @@
             <trans-unit id="post.search_no_results">
                 <source>post.search_no_results</source>
                 <target>Aucun résultat</target>
+            </trans-unit>
+
+            <trans-unit id="categorie.no_categories_found">
+                <source>categorie.no_categories_found</source>
+                <target>Aucune catégorie trouvée.</target>
+            </trans-unit>
+
+            <trans-unit id="categorie.created_successfully">
+                <source>categorie.created_successfully</source>
+                <target>Catégorie créé avec succès !</target>
             </trans-unit>
 
             <trans-unit id="user.updated_successfully">
