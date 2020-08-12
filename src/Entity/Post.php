@@ -121,6 +121,11 @@ class Post
      */
     private $tags;
 
+    /**
+     * @ORM\OneToOne(targetEntity="Category", inversedBy="post", cascade={"persist"})
+     */
+    private $category;
+
     public function __construct()
     {
         $this->publishedAt = new \DateTime();
@@ -228,5 +233,21 @@ class Post
     public function getTags(): Collection
     {
         return $this->tags;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getCategory()
+    {
+        return $this->category;
+    }
+
+    /**
+     * @param mixed $category
+     */
+    public function setCategory($category): void
+    {
+        $this->category = $category;
     }
 }
